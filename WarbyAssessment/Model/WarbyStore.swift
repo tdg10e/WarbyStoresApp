@@ -11,10 +11,10 @@ class WarbyStore {
     var name = ""
     var shortName = ""
     var timezone = ""
-    var timezoneOffset = ""
     var address : Address?
     var city = ""
     var location = ""
+    var cardPhoto = ""
   //  var schedules : Schedule = Schedue()
     var offersEyeExams : Bool = false
     var offersRxCheck : Bool = true
@@ -25,13 +25,11 @@ class WarbyStore {
         self.init()
         
         self.name = data["name"] as? String ?? ""
-        self.shortName = data["shortName"] as? String ?? ""
+        self.shortName = data["short_name"] as? String ?? ""
+        self.cardPhoto = data["card_photo"] as? String ?? ""
         self.phone = data["phone"] as? String ?? ""
         self.address = Address(data: data["address"] as? Dictionary<String,String> ?? ["":""])
         self.timezone = data["timezone"] as? String ?? ""
-        self.timezoneOffset = data["timezoneOffset"] as? String ?? ""
-        self.city = data["city"] as? String ?? ""
-        self.location = data["location"] as? String ?? ""
         self.offersEyeExams = data["offersEyeExams"] as? Bool ?? false
         self.offersRxCheck = data["offersRxCheck"] as? Bool ?? false
 

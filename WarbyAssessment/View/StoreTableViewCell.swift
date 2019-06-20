@@ -11,10 +11,8 @@ class StoreTableViewCell: UITableViewCell {
 
     @IBOutlet weak var storeImg: UIImageView!
     @IBOutlet weak var storeName: UILabel!
-    @IBOutlet weak var state: UILabel!
-    @IBOutlet weak var city: UILabel!
-    @IBOutlet weak var stateAndZip: UILabel!
-    
+    @IBOutlet weak var street: UILabel!
+    @IBOutlet weak var cityStateZip: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +23,7 @@ class StoreTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
     }
     
 }

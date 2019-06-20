@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,8 +28,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="350.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VJq-sD-MW9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="350.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="storefront" translatesAutoresizingMaskIntoConstraints="NO" id="VJq-sD-MW9">
+                                                    <rect key="frame" x="0.0" y="-1" width="414" height="350.5"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -45,14 +46,20 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fac-dd-RG7" id="Fn6-6s-msy">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="369.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="265" id="eGE-lc-9jQ">
-                                        <rect key="frame" x="0.0" y="721" width="414" height="265"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eGE-lc-9jQ" id="5cM-aR-vYg">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="264.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPb-oU-mYb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="369.5"/>
+                                                    <connections>
+                                                        <segue destination="FAq-2o-6Ce" kind="embed" identifier="storeListToStoreTableContainer" id="Vko-6g-rSi"/>
+                                                    </connections>
+                                                </containerView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="RPb-oU-mYb" secondAttribute="bottom" id="UAO-o4-O8t"/>
+                                                <constraint firstItem="RPb-oU-mYb" firstAttribute="leading" secondItem="Fn6-6s-msy" secondAttribute="leading" id="kMC-Ye-QDZ"/>
+                                                <constraint firstItem="RPb-oU-mYb" firstAttribute="top" secondItem="Fn6-6s-msy" secondAttribute="top" id="ktM-q6-eQn"/>
+                                                <constraint firstAttribute="trailing" secondItem="RPb-oU-mYb" secondAttribute="trailing" id="rQh-dQ-Sic"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -87,5 +94,38 @@
             </objects>
             <point key="canvasLocation" x="940.57971014492762" y="137.94642857142856"/>
         </scene>
+        <!--Store Table Container View Controller-->
+        <scene sceneID="i3d-ch-BT0">
+            <objects>
+                <viewController id="FAq-2o-6Ce" customClass="StoreTableContainerViewController" customModule="WarbyAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="87Y-by-bMw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="369.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UHm-rd-YVx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="369.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UHm-rd-YVx" secondAttribute="bottom" id="DuC-gt-58D"/>
+                            <constraint firstAttribute="trailing" secondItem="UHm-rd-YVx" secondAttribute="trailing" id="MIG-Dl-3MK"/>
+                            <constraint firstItem="UHm-rd-YVx" firstAttribute="leading" secondItem="87Y-by-bMw" secondAttribute="leading" id="Xf0-Ir-KV6"/>
+                            <constraint firstItem="UHm-rd-YVx" firstAttribute="top" secondItem="87Y-by-bMw" secondAttribute="top" id="tBj-i9-c46"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3XY-L1-hlQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="storesTable" destination="UHm-rd-YVx" id="tvj-rA-0YX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oxy-MK-irY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600.0000000000002" y="673.66071428571422"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="storefront" width="1400" height="1120"/>
+    </resources>
 </document>
