@@ -14,6 +14,14 @@
 		638DE36022BAFFCB00C72CE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638DE35E22BAFFCB00C72CE8 /* LaunchScreen.storyboard */; };
 		638DE36B22BAFFCB00C72CE8 /* WarbyAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DE36A22BAFFCB00C72CE8 /* WarbyAssessmentTests.swift */; };
 		638DE37622BAFFCB00C72CE8 /* WarbyAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DE37522BAFFCB00C72CE8 /* WarbyAssessmentUITests.swift */; };
+		638DE38822BB012000C72CE8 /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DE38722BB012000C72CE8 /* StoreService.swift */; };
+		638DE38A22BB022700C72CE8 /* WarbyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DE38922BB022700C72CE8 /* WarbyStore.swift */; };
+		638DE38C22BB02CE00C72CE8 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DE38B22BB02CE00C72CE8 /* Address.swift */; };
+		638DE38E22BB03B700C72CE8 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DE38D22BB03B700C72CE8 /* Schedule.swift */; };
+		638DE39022BB059900C72CE8 /* HeroImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DE38F22BB059900C72CE8 /* HeroImage.swift */; };
+		638DE39322BBE8D700C72CE8 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DE39122BBE8D700C72CE8 /* StoreTableViewCell.swift */; };
+		638DE39422BBE8D700C72CE8 /* StoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638DE39222BBE8D700C72CE8 /* StoreTableViewCell.xib */; };
+		638DE39622BBEDDD00C72CE8 /* StoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DE39522BBEDDD00C72CE8 /* StoreTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		638DE37122BAFFCB00C72CE8 /* WarbyAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarbyAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		638DE37522BAFFCB00C72CE8 /* WarbyAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarbyAssessmentUITests.swift; sourceTree = "<group>"; };
 		638DE37722BAFFCB00C72CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638DE38722BB012000C72CE8 /* StoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreService.swift; sourceTree = "<group>"; };
+		638DE38922BB022700C72CE8 /* WarbyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarbyStore.swift; sourceTree = "<group>"; };
+		638DE38B22BB02CE00C72CE8 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		638DE38D22BB03B700C72CE8 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		638DE38F22BB059900C72CE8 /* HeroImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroImage.swift; sourceTree = "<group>"; };
+		638DE39122BBE8D700C72CE8 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
+		638DE39222BBE8D700C72CE8 /* StoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreTableViewCell.xib; sourceTree = "<group>"; };
+		638DE39522BBEDDD00C72CE8 /* StoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,10 @@
 		638DE35422BAFFC900C72CE8 /* WarbyAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				638DE38622BB000B00C72CE8 /* Service */,
+				638DE38522BB000400C72CE8 /* Controller */,
+				638DE38422BAFFFB00C72CE8 /* Model */,
+				638DE38322BAFFEC00C72CE8 /* View */,
 				638DE35522BAFFC900C72CE8 /* AppDelegate.swift */,
 				638DE35722BAFFC900C72CE8 /* ViewController.swift */,
 				638DE35922BAFFC900C72CE8 /* Main.storyboard */,
@@ -123,6 +143,42 @@
 				638DE37722BAFFCB00C72CE8 /* Info.plist */,
 			);
 			path = WarbyAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		638DE38322BAFFEC00C72CE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				638DE39122BBE8D700C72CE8 /* StoreTableViewCell.swift */,
+				638DE39222BBE8D700C72CE8 /* StoreTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		638DE38422BAFFFB00C72CE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				638DE38922BB022700C72CE8 /* WarbyStore.swift */,
+				638DE38B22BB02CE00C72CE8 /* Address.swift */,
+				638DE38D22BB03B700C72CE8 /* Schedule.swift */,
+				638DE38F22BB059900C72CE8 /* HeroImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		638DE38522BB000400C72CE8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				638DE39522BBEDDD00C72CE8 /* StoreTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		638DE38622BB000B00C72CE8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				638DE38722BB012000C72CE8 /* StoreService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +287,7 @@
 				638DE36022BAFFCB00C72CE8 /* LaunchScreen.storyboard in Resources */,
 				638DE35D22BAFFCB00C72CE8 /* Assets.xcassets in Resources */,
 				638DE35B22BAFFC900C72CE8 /* Main.storyboard in Resources */,
+				638DE39422BBE8D700C72CE8 /* StoreTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +312,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638DE38E22BB03B700C72CE8 /* Schedule.swift in Sources */,
 				638DE35822BAFFC900C72CE8 /* ViewController.swift in Sources */,
+				638DE38A22BB022700C72CE8 /* WarbyStore.swift in Sources */,
+				638DE39322BBE8D700C72CE8 /* StoreTableViewCell.swift in Sources */,
 				638DE35622BAFFC900C72CE8 /* AppDelegate.swift in Sources */,
+				638DE39622BBEDDD00C72CE8 /* StoreTableViewController.swift in Sources */,
+				638DE38822BB012000C72CE8 /* StoreService.swift in Sources */,
+				638DE38C22BB02CE00C72CE8 /* Address.swift in Sources */,
+				638DE39022BB059900C72CE8 /* HeroImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
