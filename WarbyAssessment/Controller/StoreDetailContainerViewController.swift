@@ -38,6 +38,7 @@ class StoreDetailContainerViewController: UIViewController, UITableViewDelegate,
         
         switch indexPath.row {
         case 0:
+            addressCard.storeName.text = store.name
             if let addy = store.address {
                 addressCard.street.text = addy.streetAddress
                 addressCard.cityStateZip.text = addy.genCityStateZip()
