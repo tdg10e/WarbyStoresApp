@@ -22,6 +22,9 @@
 		638DE39322BBE8D700C72CE8 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DE39122BBE8D700C72CE8 /* StoreTableViewCell.swift */; };
 		638DE39422BBE8D700C72CE8 /* StoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638DE39222BBE8D700C72CE8 /* StoreTableViewCell.xib */; };
 		638DE39622BBEDDD00C72CE8 /* StoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DE39522BBEDDD00C72CE8 /* StoreTableViewController.swift */; };
+		86AFF3721B5AF8E1B6007029 /* Pods_WarbyAssessmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C46BD8EEAF4CE7E957FA0D /* Pods_WarbyAssessmentUITests.framework */; };
+		8D099905873F1B3BC9740B64 /* Pods_WarbyAssessmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC9CB32862B4F3038C4F361 /* Pods_WarbyAssessmentTests.framework */; };
+		B81704037F18748DB354A732 /* Pods_WarbyAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B21258782C9CB1BA71173B /* Pods_WarbyAssessment.framework */; };
 		C70D968F22BC12DC001E1C43 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D968E22BC12DC001E1C43 /* UIImageView.swift */; };
 		C7272E6A22BC49B700C26F2B /* WarbyStoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7272E6922BC49B700C26F2B /* WarbyStoreListViewController.swift */; };
 		C7272E6C22BD03B700C26F2B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7272E6B22BD03B700C26F2B /* UIView.swift */; };
@@ -52,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04072AB26F54FF17EF0A71E1 /* Pods-WarbyAssessmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarbyAssessmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WarbyAssessmentTests/Pods-WarbyAssessmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		16FB5EF6F3B92E6BF162A872 /* Pods-WarbyAssessmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarbyAssessmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WarbyAssessmentUITests/Pods-WarbyAssessmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		31D8E75BCD07424E81190DE4 /* Pods-WarbyAssessmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarbyAssessmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WarbyAssessmentTests/Pods-WarbyAssessmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		45C46BD8EEAF4CE7E957FA0D /* Pods_WarbyAssessmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WarbyAssessmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		638DE35222BAFFC900C72CE8 /* WarbyAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarbyAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638DE35522BAFFC900C72CE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		638DE35722BAFFC900C72CE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +80,7 @@
 		638DE39122BBE8D700C72CE8 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
 		638DE39222BBE8D700C72CE8 /* StoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreTableViewCell.xib; sourceTree = "<group>"; };
 		638DE39522BBEDDD00C72CE8 /* StoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewController.swift; sourceTree = "<group>"; };
+		8A7DB0F806EB33EAD2E39E1A /* Pods-WarbyAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarbyAssessment.release.xcconfig"; path = "Pods/Target Support Files/Pods-WarbyAssessment/Pods-WarbyAssessment.release.xcconfig"; sourceTree = "<group>"; };
 		C70D968E22BC12DC001E1C43 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		C7272E6922BC49B700C26F2B /* WarbyStoreListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarbyStoreListViewController.swift; sourceTree = "<group>"; };
 		C7272E6B22BD03B700C26F2B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -83,6 +91,10 @@
 		C79089F622BD4874000939CA /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 		C79089F722BD4874000939CA /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
 		C79089FE22BD4C52000939CA /* StoreDetailContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailContainerViewController.swift; sourceTree = "<group>"; };
+		C7A3750C613AC8C1D4C6DECF /* Pods-WarbyAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarbyAssessment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WarbyAssessment/Pods-WarbyAssessment.debug.xcconfig"; sourceTree = "<group>"; };
+		CEC9CB32862B4F3038C4F361 /* Pods_WarbyAssessmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WarbyAssessmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B21258782C9CB1BA71173B /* Pods_WarbyAssessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WarbyAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F266CA34526E064002870876 /* Pods-WarbyAssessmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarbyAssessmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WarbyAssessmentUITests/Pods-WarbyAssessmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B81704037F18748DB354A732 /* Pods_WarbyAssessment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D099905873F1B3BC9740B64 /* Pods_WarbyAssessmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +118,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86AFF3721B5AF8E1B6007029 /* Pods_WarbyAssessmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0570E686FE5FE82EED5B77E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7B21258782C9CB1BA71173B /* Pods_WarbyAssessment.framework */,
+				CEC9CB32862B4F3038C4F361 /* Pods_WarbyAssessmentTests.framework */,
+				45C46BD8EEAF4CE7E957FA0D /* Pods_WarbyAssessmentUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		638DE34922BAFFC900C72CE8 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +142,8 @@
 				638DE36922BAFFCB00C72CE8 /* WarbyAssessmentTests */,
 				638DE37422BAFFCB00C72CE8 /* WarbyAssessmentUITests */,
 				638DE35322BAFFC900C72CE8 /* Products */,
+				79FB0130FF8541E5A246C382 /* Pods */,
+				0570E686FE5FE82EED5B77E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +237,19 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		79FB0130FF8541E5A246C382 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7A3750C613AC8C1D4C6DECF /* Pods-WarbyAssessment.debug.xcconfig */,
+				8A7DB0F806EB33EAD2E39E1A /* Pods-WarbyAssessment.release.xcconfig */,
+				31D8E75BCD07424E81190DE4 /* Pods-WarbyAssessmentTests.debug.xcconfig */,
+				04072AB26F54FF17EF0A71E1 /* Pods-WarbyAssessmentTests.release.xcconfig */,
+				F266CA34526E064002870876 /* Pods-WarbyAssessmentUITests.debug.xcconfig */,
+				16FB5EF6F3B92E6BF162A872 /* Pods-WarbyAssessmentUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C70D968D22BC12C9001E1C43 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 638DE37A22BAFFCB00C72CE8 /* Build configuration list for PBXNativeTarget "WarbyAssessment" */;
 			buildPhases = (
+				49FCE0AD482635C3E9223314 /* [CP] Check Pods Manifest.lock */,
 				638DE34E22BAFFC900C72CE8 /* Sources */,
 				638DE34F22BAFFC900C72CE8 /* Frameworks */,
 				638DE35022BAFFC900C72CE8 /* Resources */,
+				742444F3E2F4F6C7A14E33BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 638DE37D22BAFFCB00C72CE8 /* Build configuration list for PBXNativeTarget "WarbyAssessmentTests" */;
 			buildPhases = (
+				6D9C45F6320BB28945D6797A /* [CP] Check Pods Manifest.lock */,
 				638DE36222BAFFCB00C72CE8 /* Sources */,
 				638DE36322BAFFCB00C72CE8 /* Frameworks */,
 				638DE36422BAFFCB00C72CE8 /* Resources */,
@@ -261,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 638DE38022BAFFCB00C72CE8 /* Build configuration list for PBXNativeTarget "WarbyAssessmentUITests" */;
 			buildPhases = (
+				030388C1136D473D20E6357A /* [CP] Check Pods Manifest.lock */,
 				638DE36D22BAFFCB00C72CE8 /* Sources */,
 				638DE36E22BAFFCB00C72CE8 /* Frameworks */,
 				638DE36F22BAFFCB00C72CE8 /* Resources */,
@@ -347,6 +391,83 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		030388C1136D473D20E6357A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WarbyAssessmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49FCE0AD482635C3E9223314 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WarbyAssessment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D9C45F6320BB28945D6797A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WarbyAssessmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		742444F3E2F4F6C7A14E33BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WarbyAssessment/Pods-WarbyAssessment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WarbyAssessment/Pods-WarbyAssessment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		638DE34E22BAFFC900C72CE8 /* Sources */ = {
@@ -541,6 +662,7 @@
 		};
 		638DE37B22BAFFCB00C72CE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A3750C613AC8C1D4C6DECF /* Pods-WarbyAssessment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +680,7 @@
 		};
 		638DE37C22BAFFCB00C72CE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A7DB0F806EB33EAD2E39E1A /* Pods-WarbyAssessment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +698,7 @@
 		};
 		638DE37E22BAFFCB00C72CE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D8E75BCD07424E81190DE4 /* Pods-WarbyAssessmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -595,6 +719,7 @@
 		};
 		638DE37F22BAFFCB00C72CE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04072AB26F54FF17EF0A71E1 /* Pods-WarbyAssessmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -615,6 +740,7 @@
 		};
 		638DE38122BAFFCB00C72CE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F266CA34526E064002870876 /* Pods-WarbyAssessmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -634,6 +760,7 @@
 		};
 		638DE38222BAFFCB00C72CE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16FB5EF6F3B92E6BF162A872 /* Pods-WarbyAssessmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
