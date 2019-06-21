@@ -23,7 +23,15 @@
 		638DE39422BBE8D700C72CE8 /* StoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638DE39222BBE8D700C72CE8 /* StoreTableViewCell.xib */; };
 		638DE39622BBEDDD00C72CE8 /* StoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DE39522BBEDDD00C72CE8 /* StoreTableViewController.swift */; };
 		C70D968F22BC12DC001E1C43 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D968E22BC12DC001E1C43 /* UIImageView.swift */; };
-		C7C9EDCB22BBFC2B007B19FB /* StoreTableContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C9EDCA22BBFC2B007B19FB /* StoreTableContainerViewController.swift */; };
+		C7272E6A22BC49B700C26F2B /* WarbyStoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7272E6922BC49B700C26F2B /* WarbyStoreListViewController.swift */; };
+		C7272E6C22BD03B700C26F2B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7272E6B22BD03B700C26F2B /* UIView.swift */; };
+		C79089F022BD4825000939CA /* AddressCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79089EE22BD4825000939CA /* AddressCardTableViewCell.swift */; };
+		C79089F122BD4825000939CA /* AddressCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79089EF22BD4825000939CA /* AddressCardTableViewCell.xib */; };
+		C79089F422BD4856000939CA /* AboutStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79089F222BD4856000939CA /* AboutStoreTableViewCell.swift */; };
+		C79089F522BD4856000939CA /* AboutStoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79089F322BD4856000939CA /* AboutStoreTableViewCell.xib */; };
+		C79089F822BD4874000939CA /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79089F622BD4874000939CA /* ServiceTableViewCell.swift */; };
+		C79089F922BD4874000939CA /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79089F722BD4874000939CA /* ServiceTableViewCell.xib */; };
+		C79089FF22BD4C52000939CA /* StoreDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79089FE22BD4C52000939CA /* StoreDetailContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +74,15 @@
 		638DE39222BBE8D700C72CE8 /* StoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreTableViewCell.xib; sourceTree = "<group>"; };
 		638DE39522BBEDDD00C72CE8 /* StoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewController.swift; sourceTree = "<group>"; };
 		C70D968E22BC12DC001E1C43 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
-		C7C9EDCA22BBFC2B007B19FB /* StoreTableContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableContainerViewController.swift; sourceTree = "<group>"; };
+		C7272E6922BC49B700C26F2B /* WarbyStoreListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarbyStoreListViewController.swift; sourceTree = "<group>"; };
+		C7272E6B22BD03B700C26F2B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		C79089EE22BD4825000939CA /* AddressCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCardTableViewCell.swift; sourceTree = "<group>"; };
+		C79089EF22BD4825000939CA /* AddressCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressCardTableViewCell.xib; sourceTree = "<group>"; };
+		C79089F222BD4856000939CA /* AboutStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutStoreTableViewCell.swift; sourceTree = "<group>"; };
+		C79089F322BD4856000939CA /* AboutStoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutStoreTableViewCell.xib; sourceTree = "<group>"; };
+		C79089F622BD4874000939CA /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		C79089F722BD4874000939CA /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
+		C79089FE22BD4C52000939CA /* StoreDetailContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +171,12 @@
 			children = (
 				638DE39122BBE8D700C72CE8 /* StoreTableViewCell.swift */,
 				638DE39222BBE8D700C72CE8 /* StoreTableViewCell.xib */,
+				C79089EE22BD4825000939CA /* AddressCardTableViewCell.swift */,
+				C79089EF22BD4825000939CA /* AddressCardTableViewCell.xib */,
+				C79089F222BD4856000939CA /* AboutStoreTableViewCell.swift */,
+				C79089F322BD4856000939CA /* AboutStoreTableViewCell.xib */,
+				C79089F622BD4874000939CA /* ServiceTableViewCell.swift */,
+				C79089F722BD4874000939CA /* ServiceTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,7 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				638DE39522BBEDDD00C72CE8 /* StoreTableViewController.swift */,
-				C7C9EDCA22BBFC2B007B19FB /* StoreTableContainerViewController.swift */,
+				C7272E6922BC49B700C26F2B /* WarbyStoreListViewController.swift */,
+				C79089FE22BD4C52000939CA /* StoreDetailContainerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				C70D968E22BC12DC001E1C43 /* UIImageView.swift */,
+				C7272E6B22BD03B700C26F2B /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -302,6 +326,9 @@
 				638DE35D22BAFFCB00C72CE8 /* Assets.xcassets in Resources */,
 				638DE35B22BAFFC900C72CE8 /* Main.storyboard in Resources */,
 				638DE39422BBE8D700C72CE8 /* StoreTableViewCell.xib in Resources */,
+				C79089F122BD4825000939CA /* AddressCardTableViewCell.xib in Resources */,
+				C79089F922BD4874000939CA /* ServiceTableViewCell.xib in Resources */,
+				C79089F522BD4856000939CA /* AboutStoreTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,12 +353,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7272E6C22BD03B700C26F2B /* UIView.swift in Sources */,
 				638DE38E22BB03B700C72CE8 /* Schedule.swift in Sources */,
 				638DE35822BAFFC900C72CE8 /* ViewController.swift in Sources */,
 				638DE38A22BB022700C72CE8 /* WarbyStore.swift in Sources */,
-				C7C9EDCB22BBFC2B007B19FB /* StoreTableContainerViewController.swift in Sources */,
+				C79089F822BD4874000939CA /* ServiceTableViewCell.swift in Sources */,
 				638DE39322BBE8D700C72CE8 /* StoreTableViewCell.swift in Sources */,
+				C79089F422BD4856000939CA /* AboutStoreTableViewCell.swift in Sources */,
+				C79089FF22BD4C52000939CA /* StoreDetailContainerViewController.swift in Sources */,
 				638DE35622BAFFC900C72CE8 /* AppDelegate.swift in Sources */,
+				C7272E6A22BC49B700C26F2B /* WarbyStoreListViewController.swift in Sources */,
+				C79089F022BD4825000939CA /* AddressCardTableViewCell.swift in Sources */,
 				C70D968F22BC12DC001E1C43 /* UIImageView.swift in Sources */,
 				638DE39622BBEDDD00C72CE8 /* StoreTableViewController.swift in Sources */,
 				638DE38822BB012000C72CE8 /* StoreService.swift in Sources */,

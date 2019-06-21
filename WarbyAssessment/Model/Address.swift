@@ -19,14 +19,18 @@ class Address {
     convenience init(data: [String: String]) {
         self.init()
         
-        self.streetAddress = data["streetAddress"] ?? ""
-        self.extendedAddress = data["extendedAddress"] ?? ""
-        self.postalCode = data["postalCode"] ?? ""
-        self.regionCode = data["regionCode"] ?? ""
-        self.regionName = data["regionName"] ?? ""
+        self.streetAddress = data["street_address"] ?? ""
+        self.extendedAddress = data["extended_address"] ?? ""
+        self.postalCode = data["postal_code"] ?? ""
+        self.regionCode = data["region_code"] ?? ""
+        self.regionName = data["region_name"] ?? ""
         self.locality = data["locality"] ?? ""
-        self.countryCode = data["countryCode"] ?? ""
+        self.countryCode = data["country_code"] ?? ""
     
+    }
+    
+    func genCityStateZip() -> String {
+        return "\(self.locality),\(self.regionCode), \(self.postalCode)"
     }
     
 }

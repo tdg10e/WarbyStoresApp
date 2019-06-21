@@ -8,7 +8,7 @@
 import UIKit
 
 class StoreTableViewController: UITableViewController {
-    var warbyStores = [WarbyStore]()
+    var warbyStore = WarbyStore()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,8 +33,10 @@ class StoreTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-         if indexPath.row == 1 {
-            return CGFloat(warbyStores.count * 121)
+        if indexPath.row == 0 {
+            return 300
+        } else if indexPath.row == 1 {
+            return 550
         }
         
         return tableView.rowHeight
@@ -46,9 +48,9 @@ class StoreTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "storeListToStoreTableContainer" {
-            let container = segue.destination as! StoreTableContainerViewController
-            container.warbyStores = self.warbyStores
+        if segue.identifier == "storeDetailsContainer" {
+            let container = segue.destination as! StoreDetailContainerViewController
+            container.store = self.warbyStore
            // container.delegate = self
         }
         

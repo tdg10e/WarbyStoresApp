@@ -1,5 +1,5 @@
 //
-//  StoreTableContainerViewController.swift
+//  WarbyStoreListViewController.swift
 //  WarbyAssessment
 //
 //  Created by Tremaine Grant on 6/20/19.
@@ -7,19 +7,14 @@
 
 import UIKit
 
-protocol StoreContainerDelegate: class {
-    func select(store: WarbyStore)
-    func reload()
-}
-class StoreTableContainerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var warbyStores = [WarbyStore]()
+class WarbyStoreListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var storesTable: UITableView!
-    weak var delegate: StoreContainerDelegate?
-    
+    var warbyStores = [WarbyStore]()
+    var selectedStore = WarbyStore()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         storesTable.delegate = self
         storesTable.dataSource = self
@@ -28,7 +23,9 @@ class StoreTableContainerViewController: UIViewController, UITableViewDelegate, 
         
         StoreService.sharedInstance.getStores { (stores) in
             self.warbyStores = stores
-            self.storesTable.reloadData()
+            DispatchQueue.main.async { // Correct
+                self.storesTable.reloadData()
+            }
         }
     }
     
@@ -43,24 +40,40 @@ class StoreTableContainerViewController: UIViewController, UITableViewDelegate, 
         let store = warbyStores[indexPath.row]
         storeCell.storeName.text = store.name
         storeCell.street.text = store.address?.streetAddress
-        storeCell.cityStateZip.text = "\(store.address?.locality),\(store.address?.regionCode), \(store.address?.postalCode)"
+       // storeCell.delegate = self
+        storeCell.store = store
         
-        storeCell.imageView?.downloaded(from: store.cardPhoto)
+        if let addy = store.address {
+             storeCell.cityStateZip.text = addy.genCityStateZip()
+        }
+       
+        //storeCell.imageView?.dowloadFromServer(link: store.cardPhoto)
         
         storeCell.selectionStyle = UITableViewCell.SelectionStyle.none
         return storeCell
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedStore = warbyStores[indexPath.row]
+        self.performSegue(withIdentifier: "storeListingToDetails", sender: nil)
+    }
 
 
-    /*
+    
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "storeListingToDetails" {
+            let container = segue.destination as! StoreTableViewController
+            container.warbyStore = self.selectedStore
+        }
+        
+        
     }
-    */
+    
 
 }
