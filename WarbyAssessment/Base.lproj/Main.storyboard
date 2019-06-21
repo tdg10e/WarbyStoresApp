@@ -102,6 +102,9 @@
                             <outlet property="delegate" destination="Drg-5t-U3v" id="XDB-2D-VtY"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="storePhoto" destination="KL6-fL-z8A" id="xjN-7P-Stb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d53-nf-w2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,6 +148,7 @@
                             <constraint firstAttribute="trailing" secondItem="3XZ-fb-fyO" secondAttribute="trailing" id="UgJ-t4-L9Q"/>
                             <constraint firstItem="3XZ-fb-fyO" firstAttribute="leading" secondItem="apl-ro-8NX" secondAttribute="leading" id="as0-lV-J6a"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="v5c-NL-Nzr"/>
                     </view>
                     <connections>
                         <outlet property="detailsTable" destination="3XZ-fb-fyO" id="SnY-ID-yhT"/>

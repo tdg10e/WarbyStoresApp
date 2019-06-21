@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class WarbyStoreListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -47,7 +49,15 @@ class WarbyStoreListViewController: UIViewController, UITableViewDataSource, UIT
              storeCell.cityStateZip.text = addy.genCityStateZip()
         }
        
-        //storeCell.imageView?.dowloadFromServer(link: store.cardPhoto)
+        if store.cardPhoto != "" {
+            if let url = URL(string: (store.cardPhoto)) {
+                storeCell.storeImg.af_setImage(withURL: url, placeholderImage: UIImage(named: "storefront"))
+            } else {
+                storeCell.storeImg.image = UIImage(named: "storeFront")
+            }
+        } else {
+            storeCell.storeImg.image = UIImage(named: "storeFront")
+        }
         
         storeCell.selectionStyle = UITableViewCell.SelectionStyle.none
         return storeCell

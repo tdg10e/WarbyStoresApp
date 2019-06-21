@@ -16,9 +16,7 @@ class WarbyStore {
     var location = ""
     var cardPhoto = ""
     var description = ""
-  //  var schedules : Schedule = Schedue()
     var offersEyeExams : Bool = false
-   // var heroImage : HeroImage = HeroImage()
     var phone : String = ""
     
     convenience init(data: [String: Any]) {
@@ -29,8 +27,9 @@ class WarbyStore {
         
         if let cmsContent = data["cms_content"] as? Dictionary<String,Any> {
             self.cardPhoto = "https:\(cmsContent["card_photo"] as? String ?? "")"
+            self.description = "\(cmsContent["description"] as? String ?? "")"
         }
-        self.description = data["description"] as? String ?? "N/a"
+       
         self.phone = data["phone"] as? String ?? ""
         self.address = Address(data: data["address"] as? Dictionary<String,String> ?? ["":""])
         self.timezone = data["timezone"] as? String ?? ""

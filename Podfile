@@ -9,14 +9,5 @@ target 'WarbyAssessment' do
   pod 'Alamofire'
   pod 'AlamofireImage'
 
-  target 'WarbyAssessmentTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'WarbyAssessmentUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end

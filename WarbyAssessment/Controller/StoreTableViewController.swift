@@ -8,6 +8,7 @@
 import UIKit
 
 class StoreTableViewController: UITableViewController {
+    @IBOutlet weak var storePhoto: UIImageView!
     var warbyStore = WarbyStore()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +18,15 @@ class StoreTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        if warbyStore.cardPhoto != "" {
+            if let url = URL(string: (warbyStore.cardPhoto)) {
+                storePhoto.af_setImage(withURL: url, placeholderImage: UIImage(named: "storefront"))
+            } else {
+                storePhoto.image = UIImage(named: "storeFront")
+            }
+        } else {
+            storePhoto.image = UIImage(named: "storeFront")
+        }
         
     }
 
